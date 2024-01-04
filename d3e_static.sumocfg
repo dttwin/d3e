@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="evropska.net.xml"/>
+        <route-files value="evropska_persons.trip.xml"/>
+        <additional-files value="evropska.int.det.add.xml,evropska.ext.det.add.xml,pt_vtypes.xml,evropska_gtfs_pt_stops_routes.add.xml,evropska_gtfs_pt_vehicles.rou.xml,evropska_initialdemand.rou.xml,evropska.output.edgedata.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="86400"/>
+        <!-- step-length value="0.1"/ -->
+    </time>
+
+    <processing>
+        <ignore-junction-blocker value="20"/>
+        <time-to-teleport value="600"/>
+        <max-depart-delay value="600"/>
+        <ignore-route-errors value="true"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.threads value="3"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <no-warnings value="false"/>
+        <duration-log.disable value="false"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="false"/>
+    </report>
+
+    <gui>
+        <start value="false"/>
+        <scheme name="real world"/>
+        <include href="background/background_settings.small.xml"/>
+    </gui>	
+
+    <xml-validation value="never"/>
+
+</configuration>

@@ -1,0 +1,4 @@
+# Ignore PyCharm config directory
+.idea/
+# Do not commit output files
+outputs/

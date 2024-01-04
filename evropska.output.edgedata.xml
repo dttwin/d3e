@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Digital twin Evropská - edge data output definition
+-->
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <edgeData id="trafficdata_set" period="900" file="outputs/edgedata.traffic.out.xml"/>
+    <edgeData id="emission_set" type="emissions" period="900" file="outputs/edgedata.emissions.out.xml"/>
+</additional>
